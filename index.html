@@ -1,25 +1,212 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My New Website!</title>
-  <style>
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-    }
-    h1 {
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADCOX - Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>🚀 Site is NOT !! "(WHAT???)" Running!</h1>
+    <!-- Animated Background Canvas -->
+    <canvas class="bg-canvas" id="bgCanvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav id="nav">
+        <div class="nav-content">
+            <div class="logo">ADCOX</div>
+            <ul class="nav-links">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-label">VOL.I</div>
+            <h1>Yep<br>Website!!</h1>
+            <p class="subtitle">My cool and awesome website!!</p>
+            <div class="hero-cta">
+                <a href="#work" class="cta-button">Explore Work</a>
+            </div>
+        </div>
+        <div class="hero-accent-shape"></div>
+    </section>
+    
+    <!-- Introduction Section -->
+    <section id="intro">
+        <div class="section-header">
+            <span class="section-number">01</span>
+            <h2 class="section-title">INTRODUCTION TO</h2>
+        </div>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p class="intro-lead">I'm a Computer Science student who discovered graphic design as a creative outlet and found my passion lies at the intersection of both worlds.</p>
+                
+                <p>Currently in my junior year, I spend my days writing algorithms and my evenings crafting visual narratives. What started as curiosity about design has evolved into a genuine love for creating experiences that are both functionally elegant and visually compelling.</p>
+                
+                <p>My approach blends the systematic thinking of programming with the intuitive exploration of design. Every project is an opportunity to solve problems creatively, whether through clean code or thoughtful visual communication.</p>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Development</h4>
+                        <span>JavaScript, Python, React</span>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Design</h4>
+                        <span>Typography, Layout, Color Theory</span>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools</h4>
+                        <span>Figma, Adobe Creative Suite</span>
+                    </div>
+                </div>
+            </div>
+            <div class="intro-visual">
+                <div class="design-element">
+                    <div class="geometric-shape shape-1"></div>
+                    <div class="geometric-shape shape-2"></div>
+                    <div class="geometric-shape shape-3"></div>
+                    <div class="texture-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Work Section -->
+    <section id="work">
+        <div class="section-header">
+            <span class="section-number">02</span>
+            <h2 class="section-title">SELECTED WORK</h2>
+        </div>
+        <div class="work-grid">
+            <div class="work-card">
+                <div class="work-image">
+                    <div class="placeholder-image design-preview">
+                      <img src="https://avatars.githubusercontent.com/u/206970238?v=4" alt="Introduction To Vol.I design project">
+                    </div>
+                </div>
+                <div class="work-info">
+                    <span class="work-category">Graphic Design</span>
+                    <h3>Introduction To Vol.I</h3>
+                    <p>A personal exploration in layout design, typography, and visual storytelling. This piece represents my first steps into the world of graphic design.</p>
+                    <div class="work-tags">
+                        <span class="tag">Layout Design</span>
+                        <span class="tag">Typography</span>
+                        <span class="tag">Visual Identity</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="work-image">
+                    <div class="placeholder-image code-preview"></div>
+                </div>
+                <div class="work-info">
+                    <span class="work-category">Web Development</span>
+                    <h3>Interactive Data Visualization</h3>
+                    <p>A dynamic web application that transforms complex datasets into engaging visual narratives using D3.js and modern web standards.</p>
+                    <div class="work-tags">
+                        <span class="tag">D3.js</span>
+                        <span class="tag">Data Viz</span>
+                        <span class="tag">Interactive</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="work-card">
+                <div class="work-image">
+                    <div class="placeholder-image hybrid-preview"></div>  
+                </div>
+                <div class="work-info">
+                    <span class="work-category">Hybrid Project</span>
+                    <h3>Algorithm Visualization Tool</h3>
+                    <p>Bridging code and design - an educational tool that makes complex sorting algorithms visually intuitive through thoughtful interface design.</p>
+                    <div class="work-tags">
+                        <span class="tag">Education</span>
+                        <span class="tag">UX Design</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <span class="section-number">03</span>
+            <h2 class="section-title">CONNECT</h2>
+        </div>
+        <div class="contact-content">
+            <p class="contact-lead">Interested in collaborating or just want to chat about the intersection of code and design?</p>
+            <div class="contact-info">
+                <a href="mailto:willadcox@tamu.edu" class="contact-link primary">
+                    <span class="link-label">Email</span>
+                    <span class="link-value">willadcox@tamu.edu</span>
+                </a>
+                <div class="contact-links-grid">
+                    <a href="https://github.com/WilliamAdcox" class="contact-link" target="_blank" rel="noopener">GitHub</a>
+                    <a href="#" class="contact-link" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="#" class="contact-link" target="_blank" rel="noopener">Behance</a>
+                    <a href="#" class="contact-link" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What's Next Section -->
+    <section id="whats-next">
+        <div class="section-header">
+            <span class="section-number">04</span>
+            <h2 class="section-title">WHAT'S NEXT?</h2>
+        </div>
+        <div class="intro-content">
+            <div class="intro-text">
+                <p class="intro-lead">This site is a work in progress</p>
+                <p>
+                    - Remove these spinning shapes
+                </p>
+                <p>
+                    - Fix whatever is going on with the header where if your
+                    screen is too big then the  "Digital Craftsman" gets cutoff by
+                    the rightmost edge
+                </p>
+                <p>
+                    - Add images for the Selected Work section (and change that title to something
+                    more appropriate)
+                </p>
+                <p>
+                    - Figure out whatever is going on with that cropping
+                </p>
+                <p>
+                    - Add some more hyperlinks to work that I've definitely done so far
+                </p>
+                <p>
+                    - Add way too many A&M logos
+                </p>
+            </div>
+            <div class="intro-visual">
+                <div class="design-element">
+                    <div class="geometric-shape shape-1"></div>
+                    <div class="geometric-shape shape-2"></div>
+                    <div class="geometric-shape shape-3"></div>
+                    <div class="texture-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <span>© 2025 ADCOX</span>
+            <span class="footer-location">Based in Texas</span>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
