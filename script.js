@@ -39,3 +39,5 @@
         document.querySelectorAll('.section-title').forEach(title => {
             observer.observe(title);
         });
+
+        
